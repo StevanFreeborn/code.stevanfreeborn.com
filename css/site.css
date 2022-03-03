@@ -7,17 +7,19 @@
 .navbar-brand {
     color: black;
     font-size: xx-large;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
 }
 
-.navbar-brand > i {
-    color: #db3e3e;
-    font-size: xx-large;
-}
+    .navbar-brand > i {
+        color: #db3e3e;
+        font-size: xx-large;
+    }
 
 .navbar-light .navbar-nav .nav-link {
     color: black;
     font-size: x-large;
-    margin-top: 12px;
 }
 
 .nav-link > i {
@@ -29,18 +31,61 @@
     border: none;
 }
 
-.navbar-toggler:focus {
-    outline: none;
-    box-shadow: none;
-}
+    .navbar-toggler:focus {
+        outline: none;
+        box-shadow: none;
+    }
 
-.navbar-toggler:hover {
-    box-shadow: 0 0 0 0.1rem;
-}
+    .navbar-toggler:hover {
+        box-shadow: 0 0 0 0.1rem;
+    }
 
 /* Site Styling */
-.heading {
-    color: #db3e3e;
+
+body {
+    max-width: 600px;
+    margin: auto;
 }
+
+.home-image {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.home-image > img {
+    width: 300px;
+    height: auto;
+}
+
+.hello {
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.hello > h1{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:50px;
+    font-weight: 400;
+}
+
+.wave {
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }
+    100% { transform: rotate( 0.0deg) }
+  }
 
 /* Page Specific Styling */
