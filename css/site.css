@@ -4,6 +4,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+:root {
+    --primary-color: #333;
+    --secondary-color: #db3e3e
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -12,7 +17,7 @@
 
 body {
     font-family: 'Lato', sans-serif;
-    color: #333;
+    color: var(--primary-color);
 }
 
 ul {
@@ -21,7 +26,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: #333;
+    color: var(--primary-color);
 }
 
 h1, h2 {
@@ -39,7 +44,7 @@ img {
 }
 
 .section-heading {
-    font-size: 30px;
+    font-size: 25px;
     max-width: 500px;
     margin: auto;
     font-weight: 300;
@@ -48,7 +53,7 @@ img {
 /*navbar*/
 .navbar {
     background-color: white;
-    color: #333;
+    color: var(--primary-color);
     height: 70px;
 }
 
@@ -57,7 +62,7 @@ img {
     }
 
     .navbar i {
-        color: #db3e3e;
+        color: var(--secondary-color);
     }
 
     .navbar a {
@@ -66,7 +71,7 @@ img {
     }
 
     .navbar a:hover{
-        border-bottom: 2px #333 solid;
+        border-bottom: 2px var(--primary-color) solid;
     }
 
     .navbar .flex {
@@ -80,7 +85,7 @@ img {
 .greeting {
     height: 400px;
     background-color: white;
-    color: #333;
+    color: var(--primary-color);
     position: relative;
 }
 
@@ -105,6 +110,7 @@ img {
 
 .greeting p{
     margin: 20px 0;
+    font-size: 20px;
 }
 
 /*skills-tools*/
@@ -114,15 +120,15 @@ img {
 }
 
 .skills-tools .grid h3 {
-    font-size: 25px;
-}
-
-.skills-tools .grid li {
     font-size: 20px;
 }
 
+.skills-tools .grid li {
+    font-size: 15px;
+}
+
 .skills-tools .grid i {
-    color: #db3e3e;
+    color: var(--secondary-color);
 }
 
 /*Code Block*/
@@ -183,7 +189,7 @@ img {
 
     .contact-form input[type='text'],
     .contact-form input[type='email'] {
-        border: 1px solid #333;
+        border: 1px solid var(--primary-color);
         border-radius: 5px;
         width: 100%;
         height: 40px;
@@ -203,7 +209,7 @@ img {
     .contact-form textarea {
         border-width: 1px;
         border-style: solid;
-        border-color: #333;
+        border-color: var(--primary-color);
         border-radius: 10px;
         width: 100%;
         padding: 10px;
