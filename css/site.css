@@ -38,6 +38,13 @@ img {
     width: 100%;
 }
 
+.section-heading {
+    font-size: 30px;
+    max-width: 500px;
+    margin: auto;
+    font-weight: 300;
+}
+
 /*navbar*/
 .navbar {
     background-color: white;
@@ -71,16 +78,25 @@ img {
 
 /*greeting*/
 .greeting {
-    height: 600px;
+    height: 400px;
     background-color: white;
     color: #333;
     position: relative;
 }
 
+.greeting .container {
+    margin-top: 20px;
+}
+
 .greeting .grid {
     grid-template-columns: 45% 55%;
     gap: 30px;
-    overflow: hidden;
+    overflow: visible;
+}
+
+.greeting img {
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 .greeting h1 {
@@ -93,10 +109,52 @@ img {
 
 /*skills-tools*/
 .skills-tools {
-    padding: 100px;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 
+.skills-tools .grid h3 {
+    font-size: 25px;
+}
+
+.skills-tools .grid li {
+    font-size: 20px;
+}
+
+.skills-tools .grid i {
+    color: #db3e3e;
+}
+
+/*Code Block*/
+
+.code-block {
+    padding: 50px 0;
+}
+
+.code-block .grid {
+    grid-template-columns: auto 1fr 1fr;
+    grid-template-rows: auto auto;
+    margin: 3rem auto;
+}
+
+.code-block *:nth-child(1){
+    align-self: end;
+}
+.code-block *:nth-child(2){
+    align-self: start;
+}
+
+.code-block *:nth-child(3){
+    grid-column: 2 / span 3;
+    grid-row: 1 / span 2;
+}
+
+
 /*contact*/
+
+.contact {
+    padding: 50px 0px;
+}
 
 .contact .container {
     max-width: 600px;
@@ -105,12 +163,13 @@ img {
 .contact .grid {
     grid-template-columns: 1fr;
     align-items: center;
+    margin: 3rem auto;
 }
 
 .contact-form{
     height: 100%;
     width: 100%;
-    padding: 40px;
+    padding: 20px;
     z-index: 100;
 }
 
@@ -128,7 +187,7 @@ img {
         border-radius: 5px;
         width: 100%;
         height: 40px;
-        padding: 3px;
+        padding: 10px;
         font-size: 16px;
     }
 
@@ -147,21 +206,14 @@ img {
         border-color: #333;
         border-radius: 10px;
         width: 100%;
-        padding: 3px;
+        padding: 10px;
         font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
     }
 
     .contact-form textarea:focus{
         outline: none;
     }
-
-.hello-text {
-    text-align: center;
-}
-
-.hello-button {
-    text-align:center;
-}
 
 /*animation*/
 .wave {

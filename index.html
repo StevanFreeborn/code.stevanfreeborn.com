@@ -60,37 +60,74 @@
   <!--Skills-->
   <section class="skills-tools">
     <div class="container">
-      <h3 class="skills-tools-heading text-center m-1">
-        Somethings I'm Handy With
+      <h3 class="section-heading text-center my-1 card">
+        Somethings I'm handy with...
       </h3>
-      <div class="grid grid-3 text-center m-4">
+      <div class="grid grid-3 text-center my-4">
         <div>
-          <i class="fa-solid fa-code fa-3x"></i>
-          <h3>Languages</h3>
-          <p class="text-secondary">HTML, JavaScript, C#</p>
+          <i class="fa-solid fa-code fa-4x"></i>
+          <h3 class="m-1">Languages</h3>
+          <p class="text-secondary">
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+              <li>C#</li>
+            </ul>
+          </p>
         </div>
         <div>
-          <i class="fa-solid fa-screwdriver-wrench fa-3x"></i>
-          <h3>Tools</h3>
-          <p class="text-secondary">Visual Studio, VS Code, GitHub</p>
+          <i class="fa-solid fa-screwdriver-wrench fa-4x"></i>
+          <h3 class="m-1">Tools</h3>
+          <p class="text-secondary">
+            <ul>
+              <li>Visual Studio</li>
+              <li>VS Code</li>
+              <li>GitHub</li>
+            </ul>
+          </p>
         </div>
         <div>
-          <i class="fa-solid fa-database fa-3x"></i>
-          <h3>Databases</h3>
-          <p class="text-secondary">MongoDB, MySQL</p>
+          <i class="fa-solid fa-database fa-4x"></i>
+          <h3 class="m-1">Databases</h3>
+          <p class="text-secondary">
+            <ul>
+              <li>MySQL</li>
+              <li>MongoDB</li>
+            </ul>
+          </p>
         </div>
       </div>
     </div>
+    <hr style="width:50%; margin:auto;">
+  </section>
 
+  <!--Code Block-->
+  <section class="code-block">
+    <h3 class="section-heading text-center my-1 card">
+      How I work...
+    </h3>
+    <div class="container grid">
+      <div class="card">
+        <h2 class="text-center">Coffee? Internet?</h2>
+      </div>
+      <div class="card">
+        <h2 class="text-center">Let's get to work.</h2>
+      </div>
+      <img src="/images/code-block-narrow.svg" alt="code-block">
+    </div>
+    <hr style="width:50%; margin:auto;">
   </section>
 
   <!--Contact-->
   <section class="contact">
-    <div class="container grid">
+    <h3 class="section-heading text-center my-1">
+      Wanna chat? Like coffee? 
+      <br> 
+      I'd love it if you said hi!
+    </h3>
+    <div class="container grid text-center">
       <div class="contact-form card">
-        <div class="hello-text">
-          <h1>Wanna chat? Like Coffee? <br> Definitely say hi then!</h1>
-        </div>
         <form>
           <div class="form-control">
             <input type="text" name="name" placeholder="Name" required>
@@ -104,7 +141,7 @@
           <div class="form-control">
             <textarea name="message" rows="10" placeholder="Message" required></textarea>
           </div>
-          <div class="hello-button">
+          <div class="text-center">
             <input type="submit" value="Say Hello" class="btn btn-outline"/>
           </div>
         </form>
