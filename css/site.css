@@ -163,7 +163,7 @@ img {
 }
 
 .contact .container {
-    max-width: 600px;
+    max-width: 700px;
 }
 
 .contact .grid {
@@ -176,7 +176,7 @@ img {
     height: 100%;
     width: 100%;
     padding: 20px;
-    z-index: 100;
+    margin: auto;
 }
 
     .contact > h2 {
@@ -198,7 +198,6 @@ img {
     }
 
     .contact-form input[type='submit'] {
-        
         width: 200px;
     }
 
