@@ -7,15 +7,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" 
+  crossorigin="anonymous" 
+  referrerpolicy="no-referrer" />
 
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-
-  <!-- Emojis -->
-  <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
 
   <!--Site CSS-->
   <link rel="stylesheet" href="/css/site.css" />
@@ -25,49 +23,72 @@
 
 <body>
 
-  <header>
-    <nav class="navbar navbar-expand-sm navbar-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-          <i class="bi bi-pc-display"></i> Code by Stevan</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="work.html">
-                <i class="bi bi-archive-fill"></i> Work</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">
-                <i class="bi bi-chat-right-dots-fill"></i> Contact</a>
-            </li>
-          </ul>
-        </div>
+  <!--Navbar-->
+  <div class="navbar">
+    <div class="container flex">
+      <h1 class="logo">
+        <i class="bi bi-pc-display"></i> Code by Stevan
+      </h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="work.html"><i class="bi bi-archive-fill"></i> Work</a>
+          </li>
+          <li>
+            <a href="contact.html"><i class="bi bi-chat-right-dots-fill"></i> Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <!--Greeting-->
+  <section class="greeting">
+    <div class="greeting-image">
+
+    </div>
+    <div class="container grid">
+      <div class="greeting-image">
+        <img src="/images/home-image.png" alt="home-image">
       </div>
-    </nav>
-  </header>
-
-  <main>
-    <div class="home-image">
-      <img src="/images/home-image.png" alt="home-image">
+      <div class="greeting-text">
+        <h1>Hi there! <span class="wave">👋🏻</span></h1>
+        <p>I like to make things. I'd love it if you'd take a look at some of them.</p>
+        <a href="work.html" class="btn btn-outline">Take A Look</a>
+      </div>
     </div>
-    <div class="hello">
-      <h1>Hi There! <span class="wave">👋🏻</span></h1>
-      <h4>I like to build things.</h4>
-      <h4>I'd love it if you took a look.</h4>
+  </section>
+  <section class="contact">
+    <div class="container grid">
+      <div class="contact-form card">
+        <div class="hello-text">
+          <h1>Wanna chat? Like Coffee? <br> Definitely say hi then!</h1>
+        </div>
+        <form>
+          <div class="form-control">
+            <input type="text" name="name" placeholder="Name" required>
+          </div>
+          <div class="form-control">
+            <input type="email" name="email" placeholder="Email" required>
+          </div>
+          <div class="form-control">
+            <input type="text" name="subject" placeholder="Subject" required>
+          </div>
+          <div class="form-control">
+            <textarea name="message" rows="10" placeholder="Message" required></textarea>
+          </div>
+          <div class="hello-button">
+            <input type="submit" value="Say Hello" class="btn btn-outline"/>
+          </div>
+        </form>
+      </div>
     </div>
-  </main>
+  </section>
 
-  <footer>
-  </footer>
-
-  <!-- Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
+  <div class="footer"> 
+    <footer>
+    </footer>
+  </div>
 
 </body>
 </html>
