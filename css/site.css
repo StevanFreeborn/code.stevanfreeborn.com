@@ -218,6 +218,19 @@ img {
         outline: none;
     }
 
+/*Footer*/
+.footer a {
+    margin-top: 20px;
+}
+
+.footer a:hover{
+    border-bottom: 2px var(--primary-color) solid;
+}
+
+.navbar a:hover{
+    border-bottom: 2px var(--primary-color) solid;
+}
+
 /*animation*/
 .wave {
     animation-name: wave-animation;
